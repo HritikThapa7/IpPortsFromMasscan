@@ -56,7 +56,7 @@ for k,v in out_dict.items():
         for value in v:
             s+=value+","
 
-    command = ["nmap", "-T4", "-p"+s, "-A", k, "-oN", k+".nmap_output"]
+    command = ["nmap", "-T4", "-p"+s, "-A", k, "-oN", k+".nmap_output","-Pn"]
     ext_code = subprocess.run(command)
     print(f"The nmap scan for {k} was run with exit code: {ext_code}")
         
