@@ -25,7 +25,7 @@ with open(input_file) as f:
 
 
 #Host and Ports as different text files (For nmap scanning)
-file_path = './nmap_output/'
+file_path = './for_nmap/'
 for k,v in out_dict.items():
     # file_name = os.path.join(file_path, k)
     if not os.path.exists(file_path):
